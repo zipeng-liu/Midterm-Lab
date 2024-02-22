@@ -1,3 +1,8 @@
+import { MenuItem } from "./MenuItem";
+
 export interface IWritable {
-    write(filename: string): void;
+  outputFilename: string;
+  outputData: string;
+  addData(value: MenuItem[]): void;
+  makeMenu(): void;
 }
